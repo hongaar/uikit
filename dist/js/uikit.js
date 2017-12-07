@@ -6446,6 +6446,10 @@ var Sticky = function (UIkit) {
                     var this$1 = this;
 
 
+                    if (!this.placeholder) {
+                        return;
+                    }
+
                     var placeholder = this.placeholder,
                         outerHeight = (this.isActive ? placeholder : this.$el).offsetHeight, el;
 

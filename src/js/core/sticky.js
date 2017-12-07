@@ -128,6 +128,10 @@ export default function (UIkit) {
 
                 write() {
 
+                    if (!this.placeholder) {
+                        return;
+                    }
+
                     var placeholder = this.placeholder,
                         outerHeight = (this.isActive ? placeholder : this.$el).offsetHeight, el;
 
